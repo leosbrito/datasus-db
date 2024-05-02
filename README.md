@@ -33,6 +33,10 @@ def main():
     # If you want, you can import to another duckdb file changing the `db_file` argument
     datasus_db.import_sih_rd(db_file="other-name.db")
 
+    # Import SIA (Sistema de Informações Ambulatorial do SUS - SIASUS) data
+    # If you want, you can import to another duckdb file changing the `db_file` argument
+    datasus_db.import_sia_pa(db_file="banco_siapa.db")
+
     # Import PO (Painel de Oncologia) data
     datasus_db.import_po()
 
